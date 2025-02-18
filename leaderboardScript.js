@@ -62,7 +62,7 @@ async function createPlayerVariables(){
 
 function createBenchPercString(benchPerc){
     if(isNaN(benchPerc)){
-        benchPerc = "---";
+        benchPerc = "<nobr>---</nobr>";
     }else{
         benchPerc += "%";
     }
