@@ -60,6 +60,14 @@ async function createPlayerVariables(){
     fillTable();
 }
 
+function createBenchPercString(benchPerc){
+    if(isNaN(benchPerc)){
+        benchPerc = "---";
+    }else{
+        benchPerc += "%";
+    }
+    return benchPerc;
+}
 
 async function fillTable() {
     // create and fill table
@@ -76,7 +84,7 @@ async function fillTable() {
             "<td>" + logData[i].shortAccName + "</td>" +
             "<td>" + logData[i].buildName + "</td>" +
             "<td>" + logData[i].dpsTargets[0][0].dps + "</td>" +
-            "<td>" + logData[i].benchPerc + "%" + "</td>" +
+            "<td>" + createBenchPercString(logData[i].benchPerc) + "</td>" +
             "</tr>"
         }else{
             leaderboardBoon +=
@@ -85,7 +93,7 @@ async function fillTable() {
             "<td>" + logData[i].shortAccName + "</td>" +
             "<td>" + logData[i].buildName + "</td>" +
             "<td>" + logData[i].dpsTargets[0][0].dps + "</td>" +
-            "<td>" + logData[i].benchPerc + "%" + "</td>" +
+            "<td>" + createBenchPercString(logData[i].benchPerc)  + "</td>" +
             "</tr>"
             nrOfBoonDps += 1;
         }
