@@ -112,6 +112,12 @@ td{
     text-align: center;
 }
 
+td.logLink{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
 td::first-letter{
     text-transform: capitalize;
 }
@@ -137,3 +143,4 @@ tr:nth-child(3){
     ul.nav li.right,
     ul.nav li{float:none;};
 }
+
