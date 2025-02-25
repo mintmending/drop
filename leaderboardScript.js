@@ -115,7 +115,7 @@ async function fillTable() {
                 "<td>" + leaderDataDps[i].buildName + "</td>" +
                 "<td>" + leaderDataDps[i].dpsTargets[0][0].dps + "</td>" +
                 "<td>" + createBenchPercString(leaderDataDps[i].benchPerc) + "</td>" +
-                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
+                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + leaderDataDps[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
                 "</tr>"
             nrOfDps += 1;
     }
@@ -128,7 +128,7 @@ async function fillTable() {
                 "<td>" + leaderDataBoon[i].buildName + "</td>" +
                 "<td>" + leaderDataBoon[i].dpsTargets[0][0].dps + "</td>" +
                 "<td>" + createBenchPercString(leaderDataBoon[i].benchPerc) + "</td>" +
-                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
+                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + leaderDataBoon[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
                 "</tr>"
             nrOfBoonDps += 1;
     }
