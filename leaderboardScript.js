@@ -1,6 +1,8 @@
 let spreadsheet_logURLs = "https://sheets.googleapis.com/v4/spreadsheets/1mnNMUB2xT5jROylK7DU8p09ODtcHuq4RM1sAYpPtDZM/values/Sheet1!A1:A100?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
 let spreadsheet_bench = "https://sheets.googleapis.com/v4/spreadsheets/182RUS6YB9Boi6rGn6fS13P79lfCviN84m3rtSByCUdM/values/Sheet1?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
 let logData = [];
+let leaderDataDps = [];
+let leaderDataBoon = [];
 let benchData = [];
 let benchProfession = 0; //Column A in Google Sheets
 let benchAverageDPS = 2; //Column C in Google Sheets 
@@ -58,8 +60,35 @@ async function createPlayerVariables() {
 
     //sort by highest benchmark percentage
     logData.sort((a, b) => b.benchPerc - a.benchPerc || isNaN(a.benchPerc) - isNaN(b.benchPerc));
+
+    fillLeaderboard();
+
     fillTable();
 }
+
+function fillLeaderboard() {
+    for (let i = 0; i < logData.length; i++) {
+        if (logData[i].boonGiver == "") {
+            if (leaderDataDps.some(item => item.account === logData[i].account)) {
+                // do nothing
+                // array is already sorted by highest benchmark percentage 
+                // only the first (highest) entry for an account will be pushed
+            } else {
+                leaderDataDps.push(logData[i]);
+            }
+        }else{
+            if (leaderDataBoon.some(item => item.account === logData[i].account)) {
+                // do nothing
+                // array is already sorted by highest benchmark percentage 
+                // only the first (highest) entry for an account will be pushed
+            } else {
+                leaderDataBoon.push(logData[i]);
+            }
+        }
+    }   
+}
+
+
 
 function createBenchPercString(benchPerc) {
     if (isNaN(benchPerc)) {
@@ -78,31 +107,30 @@ async function fillTable() {
     let nrOfBoonDps = 0;
     let nrOfDps = 0;
 
-    for (let i = 0; i < logData.length; i++) {
-        if (logData[i].boonGiver == "") {
+    for (let i = 0; i < leaderDataDps.length; i++) {
             leaderboardDPS +=
                 "<tr>" +
                 "<td>" + (nrOfDps + 1) + "</td>" +
-                "<td>" + logData[i].shortAccName + "</td>" +
-                "<td>" + logData[i].buildName + "</td>" +
-                "<td>" + logData[i].dpsTargets[0][0].dps + "</td>" +
-                "<td>" + createBenchPercString(logData[i].benchPerc) + "</td>" +
-                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink +"'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
+                "<td>" + leaderDataDps[i].shortAccName + "</td>" +
+                "<td>" + leaderDataDps[i].buildName + "</td>" +
+                "<td>" + leaderDataDps[i].dpsTargets[0][0].dps + "</td>" +
+                "<td>" + createBenchPercString(leaderDataDps[i].benchPerc) + "</td>" +
+                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
                 "</tr>"
             nrOfDps += 1;
-        } else {
+    }
+
+    for (let i = 0; i < leaderDataBoon.length; i++) {
             leaderboardBoon +=
                 "<tr>" +
-                "<td>" + (nrOfBoonDps + 1) + "</td>" +
-                "<td>" + logData[i].shortAccName + "</td>" +
-                "<td>" + logData[i].buildName + "</td>" +
-                "<td>" + logData[i].dpsTargets[0][0].dps + "</td>" +
-                "<td>" + createBenchPercString(logData[i].benchPerc) + "</td>" +
-                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink +"'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
+                "<td>" + (nrOfDps + 1) + "</td>" +
+                "<td>" + leaderDataBoon[i].shortAccName + "</td>" +
+                "<td>" + leaderDataBoon[i].buildName + "</td>" +
+                "<td>" + leaderDataBoon[i].dpsTargets[0][0].dps + "</td>" +
+                "<td>" + createBenchPercString(leaderDataBoon[i].benchPerc) + "</td>" +
+                "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
                 "</tr>"
-            nrOfBoonDps += 1;
-        }
-
+            nrOfDps += 1;
     }
 
     leaderboardDPS += "</table>";
@@ -111,8 +139,6 @@ async function fillTable() {
     let leaderboardTables = document.getElementsByClassName("leaderboard_table");
     leaderboardTables[0].innerHTML = leaderboardDPS;
     leaderboardTables[1].innerHTML = leaderboardBoon;
-
-
 
 }
 
