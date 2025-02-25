@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="log_icon_01.svg"
+   inkscape:export-filename="log_icon_01.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="11.313709"
+     inkscape:cx="28.019106"
+     inkscape:cy="26.295533"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-2"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect23"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Füllregel Gerade-Ungerade im &lt;b&gt;Füllung und Kontur&lt;/b&gt;-Dialog verwenden, wenn das Anwenden des Ausschnitts mit nachfolgendem Umwandeln in Pfade kein Ergebnis bringt" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect22"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Füllregel Gerade-Ungerade im &lt;b&gt;Füllung und Kontur&lt;/b&gt;-Dialog verwenden, wenn das Anwenden des Ausschnitts mit nachfolgendem Umwandeln in Pfade kein Ergebnis bringt" />
+    <rect
+       x="50"
+       y="15"
+       width="35"
+       height="10"
+       id="rect13" />
+    <rect
+       x="49.446494"
+       y="15.05069"
+       width="35.553506"
+       height="9.9493103"
+       id="rect12" />
+    <rect
+       x="50"
+       y="15"
+       width="35"
+       height="10"
+       id="rect11" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Füllregel Gerade-Ungerade im &lt;b&gt;Füllung und Kontur&lt;/b&gt;-Dialog verwenden, wenn das Anwenden des Ausschnitts mit nachfolgendem Umwandeln in Pfade kein Ergebnis bringt" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.919936;stroke-linejoin:bevel;stroke-opacity:1"
+         d="M 45,5.1013794 V 25 H 24.305458 Z"
+         id="path4" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7">
+      <path
+         style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         d="M 24.305458,25 V 5.1013794 L 45,5 Z"
+         id="path7" />
+      <path
+         id="lpe_path-effect7"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         class="powerclip"
+         d="M 19.305458,0.10137939 H 100.69454 V 119.89862 H 19.305458 Z M 24.305458,25 45,5 24.305458,5.1013794 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect7">
+      <path
+         style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         d="M 24.305458,25 V 5.1013794 L 45,5 Z"
+         id="path1" />
+      <path
+         id="path2"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         class="powerclip"
+         d="M 19.305458,0.10137939 H 100.69454 V 119.89862 H 19.305458 Z M 24.305458,25 45,5.1013794 23.776465,1.3700194 19.305458,4.5519999 24.305458,25" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect22">
+      <path
+         style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         d="M 24.305458,25 V 5.1013794 L 45,5 Z"
+         id="path22" />
+      <path
+         id="lpe_path-effect22"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         class="powerclip"
+         d="M 19.305458,0.10137939 H 100.69454 V 119.89862 H 19.305458 Z M 24.305458,25 45,5.1013794 23.776465,1.3700194 19.305458,4.5519999 24.305458,25" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath23">
+      <path
+         style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         d="M 24.305458,25 45,5.1013794 23.776465,1.3700194 19.305458,4.5519999 24.305458,25"
+         id="path23" />
+      <path
+         id="lpe_path-effect23"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+         class="powerclip"
+         d="M 19.305458,0.10137939 H 100.69454 V 119.89862 H 19.305458 Z M 24.305458,25 45,5.1013794 23.776465,1.3700194 19.305458,4.5519999 24.305458,25" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Document"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="display:inline;fill:#f0dcdc;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel"
+       id="rect1"
+       width="71.389084"
+       height="109.79724"
+       x="24.305458"
+       y="5.1013794"
+       clip-path="url(#clipPath23)"
+       inkscape:path-effect="#path-effect7;#path-effect22;#path-effect23"
+       sodipodi:type="rect"
+       d="M 24.305458,5.1013794 H 95.694542 V 114.89862 H 24.305458 Z" />
+    <rect
+       style="display:inline;fill:#c98383;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel"
+       id="rect2"
+       width="20.694542"
+       height="19.898621"
+       x="24.305458"
+       y="5.1013794"
+       clip-path="url(#clipPath4)"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:#c98383;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect8"
+       width="50"
+       height="10"
+       x="35"
+       y="49.889297" />
+    <rect
+       style="fill:#c98383;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect9"
+       width="50"
+       height="10"
+       x="35"
+       y="69.815498" />
+    <rect
+       style="fill:#c98383;fill-opacity:1;stroke:none;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect10"
+       width="50"
+       height="10"
+       x="35"
+       y="89.741699" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text">
+    <text
+       xml:space="preserve"
+       id="text12"
+       style="font-size:8px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:start;white-space:pre;shape-inside:url(#rect13);display:inline;fill:none;fill-opacity:1;stroke:#c98383;stroke-width:0.906667;stroke-linejoin:bevel;stroke-opacity:1"
+       transform="translate(-3.2304688,17.209978)"><tspan
+         x="50"
+         y="22.206035"
+         id="tspan3"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan2">L O G S</tspan></tspan></text>
+  </g>
+</svg>
