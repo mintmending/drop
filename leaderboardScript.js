@@ -123,14 +123,14 @@ async function fillTable() {
     for (let i = 0; i < leaderDataBoon.length; i++) {
             leaderboardBoon +=
                 "<tr>" +
-                "<td>" + (nrOfDps + 1) + "</td>" +
+                "<td>" + (nrOfBoonDps + 1) + "</td>" +
                 "<td>" + leaderDataBoon[i].shortAccName + "</td>" +
                 "<td>" + leaderDataBoon[i].buildName + "</td>" +
                 "<td>" + leaderDataBoon[i].dpsTargets[0][0].dps + "</td>" +
                 "<td>" + createBenchPercString(leaderDataBoon[i].benchPerc) + "</td>" +
                 "<td class='logLink'> <a target='_blank' rel='noopener noreferrer' href = '" + logData[i].permalink + "'>" + "<img src='log_icon_01.svg' alt='Log Icon' style='min-width:15px;max-width:20%'></img>" + "</a> </td>" +
                 "</tr>"
-            nrOfDps += 1;
+            nrOfBoonDps += 1;
     }
 
     leaderboardDPS += "</table>";
