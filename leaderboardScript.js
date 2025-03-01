@@ -1,4 +1,4 @@
-let spreadsheet_logURLs = "https://sheets.googleapis.com/v4/spreadsheets/1mnNMUB2xT5jROylK7DU8p09ODtcHuq4RM1sAYpPtDZM/values/Sheet1!A1:A100?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
+let spreadsheet_logURLs = "https://sheets.googleapis.com/v4/spreadsheets/1mnNMUB2xT5jROylK7DU8p09ODtcHuq4RM1sAYpPtDZM/values/Sheet1!A1:A200?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
 let spreadsheet_bench = "https://sheets.googleapis.com/v4/spreadsheets/182RUS6YB9Boi6rGn6fS13P79lfCviN84m3rtSByCUdM/values/Sheet1?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
 let logData = [];
 let leaderDataDps = [];
@@ -49,7 +49,20 @@ async function createPlayerVariables() {
         }
 
         // define build name
+    
         logData[i].buildName = logData[i].dmgType + " " + logData[i].boonGiver + logData[i].profession + " ";
+
+        // add manual cases for benchmarks from snowcrows discord here
+        if ((logData[i].buildName === "Power Quickness Catalyst ") && (logData[i].weapons.includes("Hammer"))){
+                if (logData[i].rotation[0].id === 5737){ //logData[i].rotation[0].id => first recorded skill?
+                    logData[i].buildName += "(Hammer, Air Start) ";
+                } else if(logData[i].rotation[0].id === 5736){
+                    logData[i].buildName += "(Hammer, Fire Start) ";
+                } else {
+                    logData[i].buildName += "(Hammer) ";
+                }
+        }
+
 
         for (let k = 0; k < benchData.length; k++) {
             if (logData[i].buildName == benchData[k][benchProfession]) {
