@@ -1,5 +1,5 @@
-let spreadsheet_logURLs = "https://sheets.googleapis.com/v4/spreadsheets/1mnNMUB2xT5jROylK7DU8p09ODtcHuq4RM1sAYpPtDZM/values/Sheet1!A1:A200?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
-let spreadsheet_bench = "https://sheets.googleapis.com/v4/spreadsheets/182RUS6YB9Boi6rGn6fS13P79lfCviN84m3rtSByCUdM/values/Sheet1?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
+const spreadsheet_logURLs = "https://sheets.googleapis.com/v4/spreadsheets/1mnNMUB2xT5jROylK7DU8p09ODtcHuq4RM1sAYpPtDZM/values/Sheet1!A1:A200?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
+const spreadsheet_bench = "https://sheets.googleapis.com/v4/spreadsheets/182RUS6YB9Boi6rGn6fS13P79lfCviN84m3rtSByCUdM/values/Sheet1?key=AIzaSyD0TtPDhKvjoN5b7flK6QyQCmpbqcUvRAM";
 let logData = [];
 let leaderDataDps = [];
 let leaderDataBoon = [];
@@ -11,7 +11,7 @@ let dmgType = "";
 let playerClass = [];
 let quickID = 1187;
 let alacID = 30328;
-let gw2BuildNr = 175086; // change if balance patch or relevant fixes happened
+let gw2BuildNr = 175086; // change manually if balance patch or relevant fixes happened
 
 
 createPlayerVariables();
@@ -150,8 +150,12 @@ async function fillTable() {
     leaderboardBoon += "</table";
 
     let leaderboardTables = document.getElementsByClassName("leaderboard_table");
+    
     leaderboardTables[0].innerHTML = leaderboardDPS;
     leaderboardTables[1].innerHTML = leaderboardBoon;
+
+    document.getElementById("loading-1").innerHTML = "";
+    document.getElementById("loading-2").innerHTML = "";
 
 }
 
